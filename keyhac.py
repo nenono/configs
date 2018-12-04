@@ -565,6 +565,10 @@ def configure(keymap):
             else:
                 self_insert_command("C-y")()
 
+    def redo():
+        keymap_emacs.is_undo_mode = False
+        undo()
+
     def set_mark_command():
         if fakeymacs.is_marked:
             reset_region()
@@ -1107,9 +1111,9 @@ def configure(keymap):
 
     # C-Underscore を機能させるための設定
     if is_japanese_keyboard:
-        define_key(keymap_emacs, "C-S-BackSlash", reset_search(reset_undo(reset_counter(reset_mark(undo)))))
+        define_key(keymap_emacs, "C-S-BackSlash", reset_search(reset_undo(reset_counter(reset_mark(redo)))))
     else:
-        define_key(keymap_emacs, "C-S-Minus", reset_search(reset_undo(reset_counter(reset_mark(undo)))))
+        define_key(keymap_emacs, "C-S-Minus", reset_search(reset_undo(reset_counter(reset_mark(redo)))))
 
     if is_japanese_keyboard:
         # C-Atmark だとうまく動かない方が居るようなので C-(192) としている
