@@ -215,7 +215,8 @@ def configure(keymap):
 
     # IME を切り替えるキーを指定する（複数指定可）
     # toggle_input_method_key = ["C-Yen"]
-    toggle_input_method_key = ["C-Yen", "C-o"]
+    # toggle_input_method_key = ["C-Yen", "C-o"]
+    toggle_input_method_key = []
 
     # C-iキーを Tabキーとして使うかどうかを指定する（True: 使う、False: 使わない）
     use_ctrl_i_as_tab = True
