@@ -222,7 +222,7 @@ def configure(keymap):
     use_ctrl_i_as_tab = True
 
     # Escキーを Metaキーとして使うかどうかを指定する（True: 使う、False: 使わない）
-    use_esc_as_meta = True
+    use_esc_as_meta = False
 
     # Ctl-xプレフィックスキーに使うキーを指定する
     # （Ctl-xプレフィックスキーのモディファイアキーは、Ctrl または Alt のいずれかから指定してください）
