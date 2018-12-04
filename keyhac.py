@@ -151,7 +151,7 @@ def configure(keymap):
                             "gvim.exe",           # GVim
                             "Code.exe",           # VSCode
                             "xyzzy.exe",          # xyzzy
-                            "VirtualBox.exe",     # VirtualBox
+                            #"VirtualBox.exe",     # VirtualBox
                             "XWin.exe",           # Cygwin/X
                             "XWin_MobaX.exe",     # MobaXterm/X
                             "Xming.exe",          # Xming
