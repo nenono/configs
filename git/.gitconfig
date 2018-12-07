@@ -4,6 +4,7 @@
 [core]
     editor = 'C:/Program Files (x86)/sakura/sakura.exe' -code=4
     quotepath = false
+    autocrlf = false
 [color]
     ui = true
 [gui]
