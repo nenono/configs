@@ -25,3 +25,7 @@
     cmd = \"C:/Program Files/Perforce/p4merge.exe\" \"$LOCAL\" \"$REMOTE\"
 [mergetool "p4"]
     cmd = \"C:/Program Files/Perforce/p4merge.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[pull]
+	ff = only
+[fetch]
+	prune = true
